@@ -17,7 +17,7 @@ class home extends StatelessWidget {
         ],
         currentIndex: 0,
         selectedItemColor: Color.fromARGB(255, 2, 249, 134),
-        unselectedItemColor: Color.fromARGB(255, 248, 1, 1),
+        unselectedItemColor: Color.fromARGB(255, 235, 23, 23),
         showUnselectedLabels: true,
       ),
       appBar: AppBar(
@@ -67,7 +67,7 @@ class home extends StatelessWidget {
                         Text('price : ${dataspesifikasi[index].price}'),
                         ClipOval(
                           child: Material(
-                            color: Color.fromARGB(255, 9, 10, 10), // button color
+                            color: Colors.blue, // button color
                             child: InkWell(
                               splashColor: Colors.red, // inkwell color
                               child: const SizedBox(
