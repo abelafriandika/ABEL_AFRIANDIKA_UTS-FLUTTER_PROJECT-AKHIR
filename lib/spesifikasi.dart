@@ -50,3 +50,4 @@ List<spesifikasi> dataspesifikasi = [
     spec: 'ramah dikantong hemat',
     image: 'assets/images/redmi note 8.jpg'),
 ];
+// mencoba commit dari terminal 
