@@ -3,11 +3,7 @@ import 'package:project_abel_utts/data_spesifikasi.dart';
 import 'package:project_abel_utts/spesifikasi.dart';
 
 class home extends StatelessWidget {
-  
-  void _getDataFromStrapi()async{
-    var response =await http.get(Uri.parse("http://localhost:1338/api/stokbarangs"));
-    var dataJson = await jsonDecode(response.body);
-  }
+  const home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +20,6 @@ class home extends StatelessWidget {
         unselectedItemColor: Color.fromARGB(255, 235, 23, 23),
         showUnselectedLabels: true,
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _getDataFromStrapi,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add), 
-        ),
       appBar: AppBar(
         title: const Text('Abel Gadget'),
         centerTitle: true,
