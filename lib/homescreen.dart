@@ -29,6 +29,26 @@ class home extends StatelessWidget {
           color: Colors.black,
         ),
       ),
+       drawer: Drawer(
+          child: ListView(
+        children: [
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: ((context) => home()),
+                  ));
+            },
+            leading: Icon(Icons.home),
+            title: Text("Home"),
+          ),
+          const ListTile(
+            leading: Icon(Icons.exit_to_app),
+            title: Text("Logout"),
+          )
+        ],
+      )),
       body: ListView.builder(
           itemCount: dataspesifikasi.length,
           itemBuilder: (context, index) {
