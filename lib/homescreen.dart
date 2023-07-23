@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_abel_utts/Keranjang_page.dart';
 import 'package:project_abel_utts/data_spesifikasi.dart';
+import 'package:project_abel_utts/login%20page.dart';
 import 'package:project_abel_utts/spesifikasi.dart';
 
 class home extends StatelessWidget {
@@ -43,9 +45,15 @@ class home extends StatelessWidget {
             leading: Icon(Icons.home),
             title: Text("Home"),
           ),
-          const ListTile(
+           ListTile(
             leading: Icon(Icons.exit_to_app),
-            title: Text("Logout"),
+            title: Text("KELUAR"),
+            onTap: () {
+             Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage())
+              ); 
+            },
           )
         ],
       )),
@@ -94,7 +102,7 @@ class home extends StatelessWidget {
                                   width: 30,
                                   height: 30,
                                   child: Icon(Icons.shopping_basket,)),
-                              onTap: () {},
+                              onTap: () {}
                             ),
                           ),
                         )

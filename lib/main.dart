@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_abel_utts/homescreen.dart';
+import 'package:project_abel_utts/login%20page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,visualDensity: VisualDensity.adaptivePlatformDensity,
   ),
-      home: const home(),
+      home: LoginPage(),
     );
   }
 }
