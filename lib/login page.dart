@@ -17,7 +17,7 @@ void signUserIn() {}
  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Color.fromARGB(255, 4, 0, 224),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -44,7 +44,7 @@ void signUserIn() {}
               const Text(
                 'WELCOME!',
                 style: TextStyle(
-                  color: Color.fromARGB(255, 49, 86, 207),
+                  color: Color.fromARGB(255, 31, 34, 42),
                   fontSize: 16,
                 ),
               ),
