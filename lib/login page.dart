@@ -17,13 +17,13 @@ void signUserIn() {}
  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 4, 0, 224),
+      backgroundColor: Color.fromARGB(255, 68, 137, 240),
       body: SafeArea(
         child: Center(
           child: Column(
             children: [
               SizedBox(
-                height: 10,
+                height: 15,
               ),
 
               //logo
@@ -31,13 +31,14 @@ void signUserIn() {}
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'lib/image/logo login.jpg',
+                    'assets/images/logo login.jpg',
                     height: 150,
+                    width: 250,
                   ),
                 ],
               ),
               const SizedBox(
-                height: 20,
+                height: 180,
               ),
 
               //welcome
@@ -45,7 +46,7 @@ void signUserIn() {}
                 'WELCOME!',
                 style: TextStyle(
                   color: Color.fromARGB(255, 31, 34, 42),
-                  fontSize: 16,
+                  fontSize: 25,
                 ),
               ),
 
@@ -61,7 +62,7 @@ void signUserIn() {}
               ),
 
               const SizedBox(
-                height: 15,
+                height: 25,
               ),
 
               //password
@@ -72,7 +73,7 @@ void signUserIn() {}
               ),
 
               const SizedBox(
-                height: 15,
+                height: 25,
               ),
 
               //forgot password
@@ -83,14 +84,14 @@ void signUserIn() {}
                   children: [
                     Text(
                       "Lupa Password?",
-                      style: TextStyle(color: Colors.grey[600]),
+                      style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
                     ),
                   ],
                 ),
               ),
 
               SizedBox(
-                height: 25,
+                height: 50,
               ),
 
               //sing in button
