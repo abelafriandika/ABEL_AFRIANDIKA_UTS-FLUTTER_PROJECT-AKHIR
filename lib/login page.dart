@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_abel_utts/login/LOGIN/my_textfield.dart';
+import 'package:project_abel_utts/login/LOGIN/Text_field.dart';
 import 'package:project_abel_utts/login/login/my_button.dart';
 
 
@@ -12,7 +12,7 @@ final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
 
-void signUserIn() {}
+void Login() {}
 
  @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ void signUserIn() {}
         child: Center(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
 
@@ -76,27 +76,13 @@ void signUserIn() {}
                 height: 25,
               ),
 
-              //forgot password
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Text(
-                      "Lupa Password?",
-                      style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
-                    ),
-                  ],
-                ),
-              ),
-
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
 
-              //sing in button
-              MyButton(
-                  //onTap: signUserIn,
+              //login button
+              const MyButton(
+                  //onTap: login,
                   )
             ],
           ),
@@ -105,3 +91,4 @@ void signUserIn() {}
     );
   }
 }
+// menggunakan stateless karena widget ini tidak memiliki data yang perlu diubah dan tidak memerlukan pemantauan perubahan status internal.

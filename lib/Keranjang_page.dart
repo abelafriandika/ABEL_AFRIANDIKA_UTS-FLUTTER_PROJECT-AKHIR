@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-// belum berfungsi
+
 class KeranjangPage extends StatelessWidget {
-  const KeranjangPage({super.key});
+  const KeranjangPage({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,8 +9,14 @@ class KeranjangPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Keranjang"),
         backgroundColor: Colors.red,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context); // Fungsi ini membuat kembali ke halaman sebelumnya
+          },
+        ),
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -21,3 +27,4 @@ class KeranjangPage extends StatelessWidget {
     );
   }
 }
+// menggunakan stateless karena untuk sementara widget ini tidak memiliki data yang perlu diubah dan tidak memerlukan pemantauan perubahan status internal.
