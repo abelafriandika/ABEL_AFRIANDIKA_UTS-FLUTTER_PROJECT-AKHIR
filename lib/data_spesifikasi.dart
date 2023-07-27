@@ -28,12 +28,12 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Text(
             spesifikasi.name,
-            style: TextStyle(
+            style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 35,
                 color: Colors.blueAccent),
@@ -45,7 +45,7 @@ class DetailScreen extends StatelessWidget {
               'Description : ' + spesifikasi.spec,
               maxLines: 5,
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 25,
                 color: Colors.brown,
               ),
@@ -56,3 +56,5 @@ class DetailScreen extends StatelessWidget {
     );
   }
 }
+// menggunakan StatelessWidget karena tidak ada perubahan data yang perlu dipantau dan diperbarui 
+// Karena detail spesifikasi tidak berubah dan tidak memerlukan perubahan status internal

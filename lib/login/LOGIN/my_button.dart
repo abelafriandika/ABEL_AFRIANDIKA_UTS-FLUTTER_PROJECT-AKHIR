@@ -15,15 +15,15 @@ class MyButton extends StatelessWidget {
       onTap: () {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const home()),
+          MaterialPageRoute(builder: (context) => const Home()),
         );
       },
       child: Container(
         padding: EdgeInsets.all(25),
-        margin: EdgeInsets.symmetric(horizontal: 25),
+        margin: const EdgeInsets.symmetric(horizontal: 25),
         decoration: BoxDecoration(
             color: Colors.black, borderRadius: BorderRadius.circular(10)),
-        child: Center(
+        child: const Center(
           child: Text(
             "MASUK",
             style: TextStyle(
@@ -37,3 +37,4 @@ class MyButton extends StatelessWidget {
     );
   }
 }
+// menggunakan stateless karena widget ini bertanggung jawab hanya untuk menampilkan tampilan tombol (button) dengan konfigurasi tertentu dan tidak memerlukan pemantauan perubahan data.
